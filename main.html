@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>MyBookList</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      max-width: 400px;
+    }
+    #submit {
+      margin-top: 10px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <h1>MyBookList</h1>
+
+  <div class="form-group">
+    <input type="text" id="title" placeholder="Title" class="form-control">
+    <input type="text" id="author" placeholder="Author" class="form-control">
+    <input type="text" id="isbn" placeholder="ISBN#" class="form-control">
+    <button id="submit" class="btn btn-primary">Add Book</button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN#</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="book-list">
+      <!-- New book rows will appear here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
